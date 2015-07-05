@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+  <!-- custom styles -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <title>Alison's microblog</title>
+</head>
+<body>
+  <div class="container">
+    <div class="jumbotron">
+  <h1>Welcome to Alison's blog!</h1>
+  <p>I love blogging!</p>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Why coding</h1>
+        <p>I am very passionate about several startup ideas and all these ideas require me to build a robust website and mobile app. In the process of looking for co-founders, I have realized a few problems. First, web development engineers are too popular. I have attended several team formation sessions, and tried to look for a co-founder who has strong engineering background. To my disappointment, it has been very hard to convince an engineer to commit to a project, because the MBA and engineer ratio is about 10:1 and engineers have too many options. Second, without coding background, I do not even know how to evaluate the quality of the engineers. Third, without coding background, I do not know how to work closely with engineers. I believe if I speak the engineering language, I will be able to deliver my product design/strategy ideas to engineers much more effectively.</p>
+        <h1>Work and education</h1>
+        <p>I am currently a full-time MBA student and willing be graduating in June 2016. Prior to MBA, I worked at Tencent (HKSE: 0700), one of the largest internet companies in China. I spent three years at Tencent headquarters, in Shenzhen China and another four years at Tencent US office, in Palo Alto. I was senior business development manager for Tencent Games Group at the first five years and later moved to the Tencent Online Media Group. I worked closely with the Silicon Valley game developers and the Hollywood celebrity agencies. My main job responsibility was to explore partnerships with the U.S.based companies and bring top quality U.S. content to China.</p>
+        <h1>Family</h1>
+        <p>I was born and raised in a small town in China. Both of my parents were teachers when I was a kid. When China opened its door to the outside world, my father went to Southern China (the Guangzhou area) to work, hoping to make a better future for the family. He later started his own company but failed miserably. However, Failure was only a great lesson and inspiration for my father. He soon worked hard and paid off all his debt and started another new company, which turned out to be a huge success. Growing up, I have been deeply influenced and inspired by my father’s entrepreneurial spirit and I know it is in my genes already.</P>
+
+        <P>I came to the U.S. in 2010 for work and met my current husband in San Francisco. Even though lots of my family is still in China, I feel so lucky to have my new American family here in the Bay Area. In May 2013, I gave birth to a wonderful boy whose name is Logan. I am now a proud mom and at the same time, I am trying to be a good and successful daughter to make my parents proud of me.</p>
+
+        <div id="todo-list"></div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>New blogs</h1>
+        <hr>
+        <form id="new-todo">
+          <div class="form-group">
+            <input class="form-control" id="todo-name" placeholder="Title of the new blog" autofocus>
+          </div>
+          <div class="form-group">
+            <input class="form-control" id="todo-desc" placeholder="Add blog details">
+          </div>
+          <div class="form-group">
+            <input type="submit" class="btn btn-success" value="Add New Blog">
+          </div>
+        </form>
+        <hr>
+        
+      </div>
+    </div>
+  </div>
+
+  <!-- jquery -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+  <!-- bootstrap js -->
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+  <!-- underscore -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+
+  <!-- custom script -->
+  <script type="text/javascript" src="script.js"></script>
+
+  <!-- underscore template -->
+  <script type="text/template" id="todo-template">
+    <div class="todo">
+      <h1><span class="todo-text"><%= name %></h1>
+      <p><%= desc %></span></p>   
+      <hr>
+    </div>
+  </script>
+
+</body>
+</html>
